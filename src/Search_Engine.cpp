@@ -158,7 +158,7 @@ void GenerateDocInfo()
     }
     for(int i=1;i<=DOCNUM;i++)//title info
     {
-        string docName="Documents/"+dec2_to_string(i)+".txt";
+        string docName="../doc/"+dec2_to_string(i)+".txt";
         ifstream ifs(docName);
         if(!ifs.is_open())
         {
@@ -174,7 +174,7 @@ void GenerateDocInfo()
 }
 void ReadDoc(int docID)
 {
-    string docName="Documents/"+dec2_to_string(docID)+".txt";
+    string docName="../doc/"+dec2_to_string(docID)+".txt";
     ifstream ifs(docName);
     if(!ifs.is_open())
     {
@@ -269,7 +269,6 @@ void Query()
         }
     }
 }
-
 
 int main()
 {
